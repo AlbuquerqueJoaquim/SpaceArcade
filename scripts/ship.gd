@@ -39,8 +39,9 @@ func _process(delta):
 		
 	if get_global_pos().x > 173:
 		set_global_pos(Vector2(173, get_global_pos().y))
-		
-	if lazer and not prev_lazer:
+		#quantos cenas estao no grupo ship_sot, quando o tiro morre 
+		#ele ira sair o proximo tiro
+	if lazer and not prev_lazer and get_tree().get_nodes_in_group("ship_shot").size() == 0:
 		var shot = prev_shot.instance()
 		get_parent().add_child(shot)
 		shot.set_global_pos(get_global_pos())
