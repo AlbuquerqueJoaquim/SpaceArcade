@@ -105,11 +105,20 @@ trigger = false
 
 [node name="enemie" parent="." instance=ExtResource( 3 )]
 
-transform/pos = Vector2( 34, 65 )
+transform/pos = Vector2( 23, 63 )
 
-[node name="enemie 2" parent="." instance=ExtResource( 3 )]
+[node name="enemie2" parent="." instance=ExtResource( 3 )]
 
-transform/pos = Vector2( 113, 66 )
+transform/pos = Vector2( 129, 64 )
 tipo = 1
+
+[node name="enemie3" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 64, 75 )
+tipo = 2
+
+[node name="enemie4" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 90, 33 )
 
 
